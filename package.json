@@ -1,0 +1,44 @@
+{
+  "name": "tree-chooser",
+  "version": "1.0.0",
+  "description": "Local fixed-width record file inspector and editor",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "predev": "node scripts/check-node-version.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/check-node-version.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "pretest": "node scripts/check-node-version.mjs",
+    "test": "tsc -b"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IsPherz/tree-chooser.git"
+  },
+  "keywords": [
+    "fixed-width",
+    "record-file",
+    "tree-chooser"
+  ],
+  "author": "Felipe Cardona",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/IsPherz/tree-chooser/issues"
+  },
+  "homepage": "https://github.com/IsPherz/tree-chooser#readme",
+  "dependencies": {
+    "@vitejs/plugin-react": "^6.0.1",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.10"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3"
+  }
+}
